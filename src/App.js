@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <FormFilter />
+      <FormFilter posts={posts} setPosts={setPosts} />
       <TableList posts={posts} error={error} />
     </div>
   );
