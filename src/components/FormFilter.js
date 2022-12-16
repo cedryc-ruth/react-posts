@@ -10,6 +10,7 @@ const FormFilter = ({posts, setPosts}) => {
       posts = posts.filter((post)=>post.title.includes(keyword));
 
       console.log(posts);
+      setPosts(posts);
     }
 
     return <form onSubmit={handleSubmit}>
